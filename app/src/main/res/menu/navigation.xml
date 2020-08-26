@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+
+        <item android:title="Menu">
+            <menu>
+                <item
+                    android:id="@+id/nav_home"
+                    android:title="Home"
+                    android:icon="@drawable/ic_home_black_24dp" />
+                <item
+                    android:title="Cart"
+                    android:icon="@drawable/ic_shopping_cart_black_24dp"
+                    android:id="@+id/nav_cart" />
+
+                <item
+                    android:id="@+id/nav_favorite"
+                    android:title="Favorite"
+                    android:icon="@drawable/ic_favorite_black_24dp" />
+
+                <item
+                    android:icon="@drawable/ic_history_black_24dp"
+                    android:title="History"
+                    android:id="@+id/nav_history"
+                    />
+                <item
+                    android:id="@+id/nav_myorder"
+                    android:title="Order"
+                    android:icon="@drawable/ic_shopping_basket_black_24dp"  />
+            </menu>
+        </item>
+    </group>
+
+    <group android:checkableBehavior="single">
+
+        <item android:title="Profile">
+
+            <menu>
+                <item
+                    android:title="Account"
+                    android:icon="@drawable/ic_account_box_black_24dp"
+                    android:id="@+id/nav_account" />
+
+                <item
+                    android:title="Exit"
+                    android:id="@+id/nav_logout"
+                    android:icon="@drawable/ic_back"/>
+            </menu>
+
+        </item>
+
+    </group>
+
+
+    <group android:checkableBehavior="single">
+
+        <item android:title="Comunicate">
+
+            <menu>
+                <item
+                    android:title="Share"
+                    android:icon="@drawable/ic_share_black_24dp"
+                    android:id="@+id/nav_share" />
+                <item
+                    android:title="Send"
+                    android:id="@+id/nav_send"
+                    android:icon="@drawable/ic_send_black_24dp"/>
+            </menu>
+
+        </item>
+    </group>
+
+    <group android:checkableBehavior="single">
+        <item android:title="Sosial Media">
+            <menu>
+                <item
+                    android:title="Facebook"
+                    android:icon="@drawable/ic_facebook"
+                    android:id="@+id/nav_facebook" />
+                <item
+                    android:title="WhatsApp"
+                    android:id="@+id/nav_whatssApp"
+                    android:icon="@drawable/ic_whatsapp"/>
+                <item
+                    android:title="Instagram"
+                    android:icon="@drawable/ic_instagram_sketched"
+                    android:id="@+id/nav_instagram" />
+            </menu>
+        </item>
+    </group>
+
+    <group android:checkableBehavior="single">
+        <item android:title="About">
+            <menu>
+                <item
+                    android:title="Developer"
+                    android:icon="@drawable/ic_add_group"
+                    android:id="@+id/nav_developer" />
+            </menu>
+        </item>
+    </group>
+
+</menu>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_marginBottom="4dp"
+    android:layout_marginTop="4dp"
+    android:elevation="3dp"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/img_barang"
+        android:layout_width="80dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/common_google_signin_btn_icon_dark_normal" />
+
+    <TextView
+        android:id="@+id/mtv_nama_barang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:text="Samsung Galaxy S"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/img_barang"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/gambar_diskon"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        app:layout_constraintStart_toStartOf="@+id/mtv_nama_barang"
+        app:layout_constraintTop_toBottomOf="@+id/mtv_nama_barang"
+        app:srcCompat="@drawable/ic_present" />
+
+    <TextView
+        android:id="@+id/mtv_diskon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Diskon 50%"
+        app:layout_constraintStart_toEndOf="@+id/gambar_diskon"
+        app:layout_constraintTop_toBottomOf="@+id/mtv_nama_barang" />
+
+    <TextView
+        android:id="@+id/mtv_harga_cart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="Rp 200000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mtv_diskon" />
+
+    <TextView
+        android:id="@+id/mtv_harga_cart_sebenarnya"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:text="Rp 5000000"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/mtv_harga_cart"
+        app:layout_constraintEnd_toStartOf="@+id/mtv_harga_cart" />
+
+    <View
+        android:id="@+id/price_cut_order"
+        android:layout_width="0dp"
+        android:layout_height="5dp"
+        android:background="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/mtv_harga_cart_sebenarnya"
+        app:layout_constraintEnd_toEndOf="@+id/mtv_harga_cart_sebenarnya"
+        app:layout_constraintStart_toStartOf="@+id/mtv_harga_cart_sebenarnya"
+        app:layout_constraintTop_toTopOf="@+id/mtv_harga_cart_sebenarnya" />
+
+    <TextView
+        android:id="@+id/offers_aplied"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="offers aplied"
+        android:textSize="12sp"
+        android:textColor="@android:color/holo_green_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mtv_harga_cart" />
+
+    <TextView
+        android:id="@+id/coupuns_applied"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:textSize="12sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="Coupuns applied"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/offers_aplied" />
+
+    <TextView
+        android:id="@+id/jumlah_barang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="Jumlah barang = 1"
+        android:textSize="12sp"
+        android:textColor="@android:color/black"
+        android:background="@drawable/border_background"
+        android:backgroundTint="@android:color/black"
+        android:drawablePadding="8dp"
+        android:drawableEnd="@drawable/ic_keyboard_arrow_down_black_24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/coupuns_applied"
+        app:layout_constraintStart_toEndOf="@+id/img_barang"
+        app:layout_constraintTop_toBottomOf="@+id/mtv_harga_cart_sebenarnya"
+        app:layout_constraintVertical_bias="0.461" />
+
+
+    <LinearLayout
+        android:id="@+id/redemption_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#EF0808"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/coupuns_applied">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/teks_redem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Check Price After Coupun redem"
+            android:textAlignment="center"
+            android:textColor="@color/colorAccent" />
+
+        <Button
+            android:id="@+id/btn_reddem"
+            android:layout_width="75dp"
+            android:layout_height="30dp"
+            android:background="@drawable/border_background"
+            android:text="Redeem"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:backgroundTint="@android:color/black"
+        android:layout_height="56dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/border_background"
+        android:elevation="3dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/redemption_layout">
+        
+        <Button
+            android:id="@+id/btn_remove_item"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@android:color/white"
+            android:text="Hapus Item"
+            android:background="@color/colorPrimaryDark"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:drawablePadding="8dp"
+            android:layout_gravity="center"
+            android:drawableRight="@drawable/ic_remove_circle_black_24dp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

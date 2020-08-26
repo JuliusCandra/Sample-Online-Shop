@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_marginBottom="1dp"
+    android:elevation="3dp"
+    android:background="@color/colorAccent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_facebook" />
+
+    <TextView
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:id="@+id/nama_produk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/gambar_diskon"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/produk_diskon"
+        app:layout_constraintStart_toStartOf="@+id/nama_produk"
+        app:layout_constraintTop_toTopOf="@+id/produk_diskon"
+        app:srcCompat="@drawable/ic_present" />
+
+    <TextView
+        android:textSize="12sp"
+        android:textColor="@android:color/black"
+        android:id="@+id/produk_diskon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/gambar_diskon"
+        app:layout_constraintTop_toBottomOf="@+id/nama_produk" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/slider_banner"
+        android:backgroundTint="@color/colorTeksReset"
+        android:orientation="horizontal"
+        android:padding="1dp"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/produk_diskon">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/teksBintang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:textSize="12sp"
+            android:text="4.5"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:contentDescription="@string/gambar_back"
+            android:src="@drawable/ic_star_black_24dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:textColor="@android:color/black"
+        android:textSize="12sp"
+        android:id="@+id/jumlah_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout2" />
+
+    <TextView
+        android:id="@+id/harga_produk_wishlisht"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:text="harga barang "
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout2"
+        app:layout_constraintHorizontal_bias="0.24"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout2"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+    <TextView
+        android:textStyle="bold"
+        android:textColor="#bebebe"
+        android:id="@+id/cutted_price_wishllist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="harga potongan barang"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/harga_produk_wishlisht"
+        app:layout_constraintStart_toEndOf="@+id/harga_produk_wishlisht"
+        app:layout_constraintTop_toTopOf="@+id/harga_produk_wishlisht" />
+
+    <TextView
+        android:id="@+id/payment_method"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        android:text="Cash on delivery available"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/harga_produk_wishlisht"
+        app:layout_constraintTop_toBottomOf="@+id/harga_produk_wishlisht" />
+
+    <ImageButton
+        android:id="@+id/button_remove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/background_button_main"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:src="@drawable/ic_remove_circle_black_24dp"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499" />
+
+    <View
+        android:id="@+id/divider15"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:background="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/cutted_price_wishllist"
+        app:layout_constraintEnd_toEndOf="@+id/cutted_price_wishllist"
+        app:layout_constraintStart_toStartOf="@+id/cutted_price_wishllist"
+        app:layout_constraintTop_toTopOf="@+id/cutted_price_wishllist" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

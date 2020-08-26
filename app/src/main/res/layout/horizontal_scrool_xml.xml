@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- daftar list yang digunakan untuk membuat produk kesamping-->
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/slider_banner"
+    android:paddingBottom="8dp"
+    android:layout_margin="8dp"
+    android:layout_height="250dp">
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/teks_terbaru"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Yang terbaru"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/button_teks_terbaru"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/button_teks_terbaru"
+        app:layout_constraintVertical_bias="0.52" />
+
+    <Button
+        android:layout_marginTop="5dp"
+        android:textSize="20sp"
+        android:id="@+id/button_teks_terbaru"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View All"
+        android:textColor="@android:color/black"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyle_produk"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_teks_terbaru" />
+</androidx.constraintlayout.widget.ConstraintLayout>

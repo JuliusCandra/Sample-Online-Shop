@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">OnlineShopProject</string>
+    <string name="name">masukkan email anda</string>
+    <string name="passoword">Forgot password</string>
+    <string name="daftar">Daftar</string>
+    <string name="hubungkan_dengan_google">Login dengan Google</string>
+    <string name="atau">Atau</string>
+    <string name="masukkan_passowrd_anda">Masukkan passowrd anda</string>
+    <string name="login">Login</string>
+    <string name="candra">All Reserved 2020 Copy Right By Candra Julius Sinaga</string>
+    <string name="Register">Register</string>
+    <string name="fullname">fullname</string>
+    <string name="email_id">Email id</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="gambar_question">gambar_question</string>
+    <string name="gambar_back">gambar_back</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="sudah_memiliki_akun">Sudah Memiliki Akun</string>
+    <string name="develoer">All Reserved 2020 Copy Right By Candra Julius Sinaga</string>
+    <string name="password_forgot">Forgot Password</string>
+    <string name="login_silahkan">Silahkan Login</string>
+    <string name="telephone">Nomor telep hone</string>
+    <string name="out">Sign out</string>
+    <string name="reset_passowrd">Pilih salah salah satu item \n utnuk anda mulai mereset password anda</string>
+    <string name="pilihan">JIka anda pilih item ini maka anda mereset password melalui email \n Silahkan anda memilih ?</string>
+    <string name="pilihan2">JIka anda pilih item ini maka anda mereset password melalui nomor telepon \n Silahkan anda memilih ?</string>
+    <string name="resetWithEmail">Reset Password \n Dengan Email</string>
+    <string name="email_anda">Masukkan Email Anda</string>
+    <string name="phone_anda">Masukkan Nomor Anda</string>
+    <string name="anda_jangan_khawatir_jika_anda_lupa_password_n_anda_tinggal_memasukkan_email_n_yang_sudah_anda_daftarkan_n_dan_anda_akan_dapat_mereset_password_anda_kembali">Anda jangan khawatir jika anda lupa password \n anda tinggal memasukkan email \n yang sudah anda daftarkan \n dan anda akan dapat mereset password anda kembali</string>
+    <string name="anda_jangan_khawatir_jika_anda_lupa_password_n_anda_tinggal_memasukkan_nomor_telephone_n_yang_sudah_anda_daftarkan_n_dan_anda_akan_dapat_mereset_password_anda_kembali">Anda jangan khawatir jika anda lupa password \n anda tinggal memasukkan nomor telephone \n yang sudah anda daftarkan \n dan anda akan dapat mereset password anda kembali</string>
+    <string name="phone_reset">Reset Password \nDengan Phone</string>
+    <string name="otp">Verification OTP</string>
+    <string name="silahkan_anda_masukkan_kode_otp_n_yang_telah_dikirimkan_via_sms_ke_nomor">Silahkan anda masukkan kode OTP \n yang telah dikirimkan VIA SMS ke nomor</string>
+    <string name="email_pemulihan">Email pemulihan berhasil dikirim, periksa email anda</string>
+    <string name="nama">Nama Anda</string>
+    <string name="punya_anda">Email Anda</string>
+    <string name="selamat_datang">Selamat Datang</string>
+    <string name="camera">camera</string>
+    <string name="open_drawer">Open Drawer</string>
+    <string name="close_drawer">Close Drawer</string>
+
+</resources>

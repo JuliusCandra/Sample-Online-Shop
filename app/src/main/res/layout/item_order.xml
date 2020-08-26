@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:elevation="3dp"
+    android:background="@color/colorAccent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/gambar"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/ic_facebook"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:contentDescription="@string/gambar_back" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:textSize="20sp"
+        android:id="@+id/judul_gambar"
+        android:textStyle="bold"
+        android:layout_toEndOf="@+id/gambar"
+        android:layout_marginTop="15dp"
+        android:layout_height="wrap_content"
+        android:text="Judul gambar" />
+
+    <ImageView
+        android:layout_marginTop="8dp"
+        android:layout_toEndOf="@+id/gambar"
+        android:layout_below="@+id/judul_gambar"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:id="@+id/gambar_dot"
+        android:src="@drawable/defaut_indicator"
+        android:tint="@color/colorTeksReset" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:id="@+id/tanggal_pembelian"
+        android:layout_toEndOf="@id/gambar_dot"
+        android:layout_below="@id/judul_gambar"
+        android:text="Tanggal pembelian "
+        android:layout_marginLeft="4dp" />
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rating"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/gambar"
+        android:id="@+id/teks_rating"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="15dp"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_below="@id/teks_rating"
+        android:id="@+id/divider8"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider" />
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/rating_rating"
+        android:layout_below="@id/divider8">
+
+
+        <ImageView
+            android:id="@+id/bintang_kejora"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            android:tint="#bebebe"
+            app:srcCompat="@drawable/ic_star_black_24dp" />
+
+        <ImageView
+            android:id="@+id/gambar_bintang"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            android:tint="#bebebe"
+            app:srcCompat="@drawable/ic_star_black_24dp" />
+
+        <ImageView
+            android:id="@+id/gambar_bintang1"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            android:tint="#bebebe"
+            app:srcCompat="@drawable/ic_star_black_24dp" />
+
+        <ImageView
+            android:id="@+id/gambar_bintang2"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            android:tint="#bebebe"
+            app:srcCompat="@drawable/ic_star_black_24dp" />
+
+
+        <ImageView
+            android:id="@+id/gambar_bintang3"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            android:tint="#bebebe"
+            app:srcCompat="@drawable/ic_star_black_24dp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

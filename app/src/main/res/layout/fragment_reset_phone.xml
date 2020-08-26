@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorTeks"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".Fragment_Awal.fragment_request_email">
+
+    <LinearLayout
+        android:id="@+id/layout_fragment_reset_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/back_phone"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_width="20dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_back"
+                android:contentDescription="@string/gambar_back" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fontFamily="cursive"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:text="@string/phone_reset"
+                android:textSize="25sp"
+                android:layout_marginStart="10dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:padding="15dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="10dp"
+                android:background="@drawable/card_drawbale">
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        app:civ_border_width="5dp"
+                        app:civ_border_color="@color/white"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/ic_phone_black_24dp" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:textStyle="bold"
+                        android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/anda_jangan_khawatir_jika_anda_lupa_password_n_anda_tinggal_memasukkan_nomor_telephone_n_yang_sudah_anda_daftarkan_n_dan_anda_akan_dapat_mereset_password_anda_kembali"
+                        android:textAlignment="center"
+                        android:layout_gravity="center_horizontal" />
+
+                    <com.hbb20.CountryCodePicker
+                        android:id="@+id/codePicker"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:ccp_showFlag="true"
+                        app:ccp_showFullName="true"
+                        app:ccp_autoDetectCountry="true"
+                        app:ccp_showNameCode="true"
+                        app:ccp_showPhoneCode="true" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        app:counterEnabled="true"
+                        app:counterMaxLength="13"
+                        android:id="@+id/reset_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        app:boxStrokeWidthFocused="5dp"
+                        app:boxStrokeColor="@android:color/black"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                        app:endIconMode="clear_text"
+                        app:hintTextColor="@color/colorTeks"
+                        android:hint="@string/phone_anda"
+                        android:layout_marginEnd="10dp"
+                        app:startIconTint="@android:color/black"
+                        app:endIconTint="@android:color/black"
+                        android:layout_marginStart="10dp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/teksInputLayout"
+                            android:hint="@string/phone_anda"
+                            android:layout_width="match_parent"
+                            android:drawableStart="@drawable/ic_phone_black_24dp"
+                            android:drawablePadding="13dp"
+                            android:inputType="phone"
+                            android:textColor="@color/colorTeks"
+                            android:layout_height="wrap_content" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <ProgressBar
+                        android:id="@+id/prosesBar1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:theme="@style/ProgerssBar"
+                        android:visibility="gone"
+                        />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/button_phone_reset"
+                        android:layout_width="match_parent"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_height="wrap_content"
+                        app:cornerRadius="50dp"
+                        android:background="@drawable/button_reset_with_email"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:text="Kirim"
+                        android:textColor="@android:color/black" />
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</ScrollView>

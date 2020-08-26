@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#CE0000</color>
+    <color name="colorPrimaryDark">#CE0000</color>
+    <color name="colorAccent">#ffffff</color>
+    <color name="greenColor">#7FFF00</color>
+    <color name="colorTeks">#FF7F50</color>
+    <color name="colorTeksEnable">#00FFFF</color>
+    <color name="colorTeksReset">#0FD176</color>
+    <color name="WarnaAbuAbu">#9e9e9e</color>
+    <color name="RecyecleView">#d6d6d6</color>
+</resources>

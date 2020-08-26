@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:gravity="bottom"
+    android:padding="13dp"
+    android:background="@color/colorPrimaryDark"
+    android:layout_height="200dp"
+    tools:ignore="RtlSymmetry">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_marginTop="-25dp"
+        android:layout_height="wrap_content"
+        android:text="@string/selamat_datang"
+        android:textSize="25sp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_marginBottom="5dp"
+            android:id="@+id/gambar_account"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@android:color/black"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@drawable/ic_account_circle_black_24dp"
+            />
+
+
+    </LinearLayout>
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/nama_anda"
+        android:layout_width="wrap_content"
+        android:drawableStart="@drawable/ic_account_box_black_24dp"
+        android:drawablePadding="5dp"
+        android:layout_height="wrap_content"
+        android:text="@string/nama"
+        android:textStyle="bold"
+        android:layout_marginBottom="5dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="15sp" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/email_anda"
+        android:drawablePadding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:text="@string/punya_anda"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:drawableStart="@drawable/ic_email_black_24dp" />
+
+
+</LinearLayout>

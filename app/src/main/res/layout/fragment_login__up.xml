@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimary"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/login_up_fragment"
+    android:layout_height="match_parent"
+    tools:context=".Fragment_Awal.Login_Up">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:orientation="horizontal">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:fontFamily="cursive"
+            android:text="@string/login"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            android:textSize="30sp"
+            app:textAllCaps="true">
+
+        </com.google.android.material.textview.MaterialTextView>
+
+        <ImageView
+            android:layout_alignParentEnd="true"
+            android:id="@+id/imageQuestion"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="right"
+            android:layout_marginStart="190dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:padding="10dp"
+            android:scaleType="center"
+            android:src="@drawable/ic_question" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_marginTop="10dp"
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_gravity="center"
+                android:src="@drawable/ic_user"
+                android:layout_marginStart="10dp"
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="20dp" />
+
+            <TextView
+                android:layout_marginStart="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/login_silahkan"
+                android:textSize="40sp"
+                android:fontFamily="cursive"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center" />
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.cardview.widget.CardView
+                    app:cardElevation="10dp"
+                    android:background="@android:color/white"
+                    app:cardCornerRadius="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        style="@style/Theme.MaterialComponents.DayNight.DarkActionBar"
+                        android:padding="10dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:padding="10dp"
+                            android:layout_marginBottom="15dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:counterEnabled="false"
+                            android:id="@+id/email1"
+                            android:background="@drawable/input_teks"
+                            android:textColorHint="@android:color/holo_red_dark"
+                            android:hint="@string/email_id">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:hint="masukkan username"
+                                android:drawablePadding="10dp"
+                                android:inputType="text"
+                                android:drawableStart="@drawable/ic_user"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            app:passwordToggleEnabled="true"
+                            android:padding="10dp"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_marginBottom="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/passowrdAnda"
+                            app:counterEnabled="true"
+                            app:counterMaxLength="10"
+                            android:background="@drawable/input_teks"
+                            android:textColorHint="@android:color/holo_red_dark"
+                            android:hint="@string/password">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:hint="@string/password"
+                                android:drawablePadding="10dp"
+                                android:inputType="textPassword"
+                                android:drawableStart="@drawable/ic_vpn_key_black_24dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:gravity="center"
+                                android:elevation="5dp"
+                                android:textStyle="bold"
+                                android:textColor="@android:color/black"
+                                android:id="@+id/daftarLogin"
+                                android:layout_gravity="right"
+                                android:fontFamily="cursive"
+                                android:text="@string/daftar"
+                                android:layout_marginTop="15dp"
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                tools:ignore="RtlHardcoded" />
+
+                            <TextView
+                                android:gravity="center"
+                                android:elevation="5dp"
+                                android:textColor="@android:color/black"
+                                android:textStyle="bold"
+                                android:fontFamily="cursive"
+                                android:layout_marginTop="15dp"
+                                android:text="@string/password_forgot"
+                                android:id="@+id/textForgot"
+                                android:layout_alignParentEnd="true"
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content" />
+
+                            <ProgressBar
+                                android:progressDrawable="@drawable/ic_loader"
+                                android:theme="@style/ProgerssBar"
+                                android:progressTint="@color/colorTeks"
+                                android:id="@+id/proses2"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginTop="20dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_below="@+id/daftarLogin"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:visibility="gone" />
+
+                            <Button
+                                android:visibility="visible"
+                                android:background="@drawable/background_button"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                android:fontFamily="cursive"
+                                android:text="@string/login"
+                                android:layout_marginTop="35dp"
+                                android:layout_centerHorizontal="true"
+                                android:id="@+id/btn_login1"
+                                android:layout_below="@id/daftarLogin"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <TextView
+                android:fontFamily="serif-monospace"
+                android:layout_marginTop="20dp"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+                android:gravity="center"
+                android:layout_gravity="bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/develoer" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>
